@@ -22,7 +22,7 @@ header {
     }
         .li1{
             color: #000056;
-    border-bottom: 1px solid rgba(0, 0, 56, 0.15); 
+    border-bottom: solid rgba(0, 0, 56, 0.15); 
     }
   }
   
@@ -64,8 +64,9 @@ header {
     height: 30px;
 background-color: #000056;
   }
-  a{
+  .tm a{
 background-color: #ffffff;;
+border-color: #000056;
   }
   h3 {
     color: rgb(81, 81, 81);
@@ -91,6 +92,16 @@ background-color: #ffffff;;
       }
     }
   }
+  .rent span{
+    width: 519px;
+   height: 26px;
+   color: #515151;
+   font-family: Arsenal;
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 39.21px;
+   text-transform: uppercase;
+  }
   .about_rent2
   h5{
     font-family: "Arsenal - Bold";
@@ -101,12 +112,10 @@ background-color: #ffffff;;
   }
   .about_rent
   h3{
-    width: 1168px;
-    height: 714px;
-    color: #515151;
-    font-family: Arsenal;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
   }
   .h3_1{
     font-family: "Arsenal - Bold";
@@ -114,9 +123,17 @@ background-color: #ffffff;;
     line-height: 24px;
   }
   .about_rent1
-  h5{
+  h4{
     font-size: 24px;
     font-weight: 700;
     line-height: 39px;
     text-transform: uppercase;
+  }
+  .about_rent2
+  h5{
+    font-family: "Arsenal - Bold";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
   }

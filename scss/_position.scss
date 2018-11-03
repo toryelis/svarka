@@ -10,16 +10,21 @@ body {
 .wrap {
   flex: 1 0 auto;
 }
+.content {
+  flex: 1 0 auto;
+}
 footer {
   flex: 0 0 auto;
 }
 .content {
-    padding: 0 315px;
     box-sizing: border-box;
+    position: relative;
+    max-width: 1030px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
   }
   header{
-    width: 1800px;
-    height: 120px;
     box-shadow: 0 1px 46px rgba(0, 0, 0, 0.11);
     background-color: #fefefe;
   }
@@ -42,43 +47,60 @@ footer {
     text-align: right;
   }
   .tm{
-    width: 1800px;
-    height: 30px;
     background-color: #000056;
-    position:relative;
-	width:100%;
-  }
-  h6 span{
-    position: absolute;
-	left:0;
     width:100%;
-    background-color: #000056;
+    margin: auto;
+  }
+  .tm li{
+    display: inline-block;
+  }
+.rent{
+  display:inline;
+  justify-content: center;
 }
   .item_block{
        width:auto;
       display: flex;
-    justify-content:space-between;
+      flex-direction:column;
+      overflow: hidden;
   }
     .item{
-        float:left;
-        display:inline-block;
-        width: 270px;
-        height: 300px;
+       width: 270px;
+       min-height: 300px;
         background-color: #f6f6f6; 
         margin: 0 32px 186px 0; 
     }
-    .item_img
-    img{
-        vertical-align: middle; 
+    .item_img img{
+       width: auto;
+       height: auto;
+       display: flex;
+        justify-content: center;
+        align-items: center; 
+     }
+    .item33{
+      display:flex;
+
     }
-  footer{
-    background-color: #202320;
-    width: 1800px;
-    height: 100px;
-  }
+    .item44{
+      display:flex;
+    }
+  
   .content_footer{
     display:flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #202320;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+  }
+  .about_rent{
+    align-items: center;
+  }
+  .about_rent1{
+    align-items: center;
+  }
+  .about_rent2{
     align-items: center;
   }

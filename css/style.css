@@ -94,6 +94,12 @@ body {
           flex: 1 0 auto;
 }
 
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
 footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -101,14 +107,16 @@ footer {
 }
 
 .content {
-  padding: 0 315px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+  max-width: 1030px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
 }
 
 header {
-  width: 1800px;
-  height: 120px;
   -webkit-box-shadow: 0 1px 46px rgba(0, 0, 0, 0.11);
           box-shadow: 0 1px 46px rgba(0, 0, 0, 0.11);
   background-color: #fefefe;
@@ -141,18 +149,20 @@ header .content {
 }
 
 .tm {
-  width: 1800px;
-  height: 30px;
   background-color: #000056;
-  position: relative;
   width: 100%;
+  margin: auto;
 }
 
-h6 span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  background-color: #000056;
+.tm li {
+  display: inline-block;
+}
+
+.rent {
+  display: inline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .item_block {
@@ -160,29 +170,44 @@ h6 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
 }
 
 .item {
-  float: left;
-  display: inline-block;
   width: 270px;
-  height: 300px;
+  min-height: 300px;
   background-color: #f6f6f6;
   margin: 0 32px 186px 0;
 }
 
-.item_img
-img {
-  vertical-align: middle;
+.item_img img {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer {
-  background-color: #202320;
-  width: 1800px;
-  height: 100px;
+.item33 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item44 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .content_footer {
@@ -193,9 +218,30 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #202320;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+}
+
+.about_rent {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_rent1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_rent2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -232,7 +278,7 @@ header {
 }
 .header__menu .li1 {
   color: #000056;
-  border-bottom: 1px solid rgba(0, 0, 56, 0.15);
+  border-bottom: solid rgba(0, 0, 56, 0.15);
 }
 
 .header__menu a:hover {
@@ -276,8 +322,9 @@ header {
   background-color: #000056;
 }
 
-a {
+.tm a {
   background-color: #ffffff;
+  border-color: #000056;
 }
 
 h3 {
@@ -306,6 +353,17 @@ h3 {
   font-weight: 700;
 }
 
+.rent span {
+  width: 519px;
+  height: 26px;
+  color: #515151;
+  font-family: Arsenal;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39.21px;
+  text-transform: uppercase;
+}
+
 .about_rent2
 h5 {
   font-family: "Arsenal - Bold";
@@ -317,12 +375,10 @@ h5 {
 
 .about_rent
 h3 {
-  width: 1168px;
-  height: 714px;
-  color: #515151;
-  font-family: Arsenal;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
 }
 
 .h3_1 {
@@ -332,8 +388,17 @@ h3 {
 }
 
 .about_rent1
-h5 {
+h4 {
   font-size: 24px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.about_rent2
+h5 {
+  font-family: "Arsenal - Bold";
+  font-size: 18px;
   font-weight: 700;
   line-height: 39px;
   text-transform: uppercase;
